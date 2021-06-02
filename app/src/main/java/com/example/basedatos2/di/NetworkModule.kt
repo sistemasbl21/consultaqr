@@ -1,7 +1,6 @@
 package com.example.basedatos2.di
 
 
-
 import com.example.basedatos2.BuildConfig.DEBUG
 import com.example.basedatos2.network.ApiClient
 import com.example.basedatos2.utils.ConnectionUtils
@@ -64,7 +63,7 @@ val retrofitModule = module {
     single { provideHttpClient() }
     single { provideGson() }
     single {
-        val baseUrl = "https://"
+        val baseUrl = "https://blsistemas.000webhostapp.com/inv/"
         provideRetrofit(get(), get(), baseUrl)
     }
 }
